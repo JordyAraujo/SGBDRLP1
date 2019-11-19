@@ -160,6 +160,21 @@ Digite uma entrada qualquer para continuar.
 
 ## Código
 
+```
+#ifndef __SISTEMA__H__
+#define __SISTEMA__H__
+#include <cstdio>
+
+#include "Tabela.hpp"
+
+void Listar_Tabelas();
+
+Tabela *Extrair_Tabela(string Nome_da_Tabela);
+void Excluir_Tabela();
+
+#endif
+```
+
 Syntax highlighted code block
 
 # Header 1
