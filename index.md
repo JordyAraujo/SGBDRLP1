@@ -146,7 +146,8 @@ Digite uma entrada qualquer para continuar.
 
 ![](img/estrutura.png)
 
-- Após o comando `user@pc:~/SGBDR$ make`, as pastas auxiliares build e bin são criadas para conter os arquivos de build e os binários de execução, respectivamente:
+- Após o comando `user@pc:~/SGBDR$ make`, as pastas auxiliares ./build, ./bin e ./tabelas são criadas para conter os arquivos de build e os binários de execução, respectivamente.
+- No exemplo abaixo podemos ver que ./tabelas possui alguns arquivos, eles foram criados no momento em que a Tabela teste1 foi salva. Tabelas.ref é um arquivo de referência contendo os nomes das Tabelas presentes no sistema. Arquivos teste1.csv e teste1.ref foram criados junto com a Tabela e são respectivamente o arquivo de tabela e sua referência, que contém sua chave primária, a quantidade de colunas e o nome de cada coluna.
 
 ![](img/estrutura2.png)
 
@@ -156,7 +157,7 @@ Digite uma entrada qualquer para continuar.
 
 - Para que as alterações realizadas no sistema sejam salvas em disco, é necessário finalizar a operação utilizando a função [8].
 - Não é possível, por exemplo, criar uma Tabela e excluí-la logo em seguida, pois o arquivo em disco ainda não foi gerado.
-- O arquivo Makefile conta com o comando `user@pc:~/SGBDR$ make clean`, porém deve-se avisar que o mesmo limpa também a pasta de arquivos gerados pelo próprio programa, excluindo as tabelas e referências. Use apenas quando os arquivos não forem mais necessários.
+- O arquivo Makefile conta com o comando `user@pc:~/SGBDR$ make clean`, porém deve-se avisar que o mesmo limpa também a pasta de arquivos gerados pelo próprio programa (./tabelas), excluindo as tabelas e referências. Use apenas quando os arquivos não forem mais necessários.
 
 ## Código
 
