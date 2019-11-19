@@ -160,7 +160,55 @@ Digite uma entrada qualquer para continuar.
 
 ## Código
 
+```cpp
+#ifndef __TABELA__H__
+#define __TABELA__H__
+#include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+#include <algorithm>
+#include <iomanip>
+
+using namespace std;
+
+//Tabela de tipos a serem utilizados nas colunas:
+// 0 - char
+// 1 - int
+// 2 - float
+// 3 - double
+// 4 - string
+
+#include "Coluna.hpp"
+
+class Tabela
+{
+private:
+	string Nome_da_Tabela;
+	string Nome_Coluna_Primaria;
+	int Total_Linhas;
+	vector<int> Chaves_Primarias;	//Vetor contendo as chaves primarias dos elementos registrados
+	vector<int> Chaves_Estrangeiras; //Vetor contendo as chaves estrangeiras dos elementos registrados
+	vector<Coluna> Colunas;			 //Vetor contendo as colunas da tabela
+public:
+	void Acrescentar_Coluna(string Nome_da_Coluna, int Tipo_da_Coluna); //Função que acrescenta uma nova coluna na tabela
+	string getNome_da_Tabela();
+	void setNome_da_Tabela(string Novo_Nome);
+	Tabela();
+	Tabela(string Novo_Nome, string Novo_Coluna_Primaria, int Novo_Total_Linhas);
+	void Adicionar_Linha();
+	void Registrar_Tabela();
+	void Listar_Dados();
+	void Pesquisa();
+	void Receber_Colunas(vector<Coluna> Novas_Colunas);
+	void Receber_Coluna_Primaria(vector<int> Nova_Coluna_Primaria);
+	void Remover_Elementos();
+};
+
+#endif
 ```
+
+```cpp
 #ifndef __SISTEMA__H__
 #define __SISTEMA__H__
 #include <cstdio>
