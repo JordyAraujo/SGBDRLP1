@@ -152,10 +152,11 @@ Digite uma entrada qualquer para continuar.
 
 - Após o comando make ser executado, o programa pode ser iniciado com o comando `user@pc:~/SGBDR$ ./bin/main`.
 
-### Observação
+### Observaçóes
 
 - Para que as alterações realizadas no sistema sejam salvas em disco, é necessário finalizar a operação utilizando a função [8].
 - Não é possível, por exemplo, criar uma Tabela e excluí-la logo em seguida, pois o arquivo em disco ainda não foi gerado.
+- O arquivo Makefile conta com o comando `user@pc:~/SGBDR$ make clean`, porém deve-se avisar que o mesmo limpa também a pasta de arquivos gerados pelo próprio programa, excluindo as tabelas e referências. Use apenas quando os arquivos não forem mais necessários.
 
 Syntax highlighted code block
 
