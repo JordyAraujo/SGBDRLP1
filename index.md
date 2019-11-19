@@ -160,26 +160,10 @@ Digite uma entrada qualquer para continuar.
 
 ## Código
 
+### Tabela
 ```cpp
 #ifndef __TABELA__H__
 #define __TABELA__H__
-#include <iostream>
-#include <vector>
-#include <string>
-#include <fstream>
-#include <algorithm>
-#include <iomanip>
-
-using namespace std;
-
-//Tabela de tipos a serem utilizados nas colunas:
-// 0 - char
-// 1 - int
-// 2 - float
-// 3 - double
-// 4 - string
-
-#include "Coluna.hpp"
 
 class Tabela
 {
@@ -187,11 +171,11 @@ private:
 	string Nome_da_Tabela;
 	string Nome_Coluna_Primaria;
 	int Total_Linhas;
-	vector<int> Chaves_Primarias;	//Vetor contendo as chaves primarias dos elementos registrados
-	vector<int> Chaves_Estrangeiras; //Vetor contendo as chaves estrangeiras dos elementos registrados
-	vector<Coluna> Colunas;			 //Vetor contendo as colunas da tabela
+	vector<int> Chaves_Primarias;
+	vector<int> Chaves_Estrangeiras;
+	vector<Coluna> Colunas;
 public:
-	void Acrescentar_Coluna(string Nome_da_Coluna, int Tipo_da_Coluna); //Função que acrescenta uma nova coluna na tabela
+	void Acrescentar_Coluna(string Nome_da_Coluna, int Tipo_da_Coluna);
 	string getNome_da_Tabela();
 	void setNome_da_Tabela(string Novo_Nome);
 	Tabela();
@@ -208,17 +192,33 @@ public:
 #endif
 ```
 
+### Sistema
 ```cpp
 #ifndef __SISTEMA__H__
 #define __SISTEMA__H__
-#include <cstdio>
-
-#include "Tabela.hpp"
 
 void Listar_Tabelas();
-
 Tabela *Extrair_Tabela(string Nome_da_Tabela);
 void Excluir_Tabela();
+
+#endif
+```
+
+### Coluna
+```cpp
+#ifndef __COLUNA__H__
+#define __COLUNA__H__
+
+typedef struct COLUNA
+{
+	string Nome_da_Coluna;		 //Nome da coluna em questão
+	int Tipo_da_Coluna;			 //Tipo da coluna em questão
+	vector<char> Elementos_char; //Vetor dos elementos contidos na coluna
+	vector<int> Elementos_int;
+	vector<float> Elementos_float;
+	vector<double> Elementos_double;
+	vector<string> Elementos_string;
+} Coluna;
 
 #endif
 ```
