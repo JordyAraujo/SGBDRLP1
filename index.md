@@ -9,6 +9,17 @@ Nosso sistema conta com as seguintes funcionalidades, baseadas no projeto modelo
 ![](img/funcionalidades.png)
 
 ```markdown
+Bem vindo!
+Qual operação deseja realizar?
+[1] Criar Tabela
+[2] Listar Tabelas Existentes
+[3] Visualizar Tabela
+[4] Adicionar Nova Linha em uma Tabela
+[5] Realizar Pesquisa numa Tabela
+[6] Excluir Elemento de uma Tabela
+[7] Excluir uma Tabela
+[8] Finalizar Operação
+
 Syntax highlighted code block
 
 # Header 1
