@@ -138,9 +138,9 @@ Digite uma entrada qualquer para continuar.
 
 - Encerra os procedimentos e salva em disco todas as alterações realizadas.
 
-## O Código
+# O Programa
 
-### Estrutura de Pastas, Compilação e Execução
+## Estrutura de Pastas, Compilação e Execução
 
 - A organização de pastas do projeto seguiu o padrão src include, que separa os arquivos de código-fonte e de cabeçalho.
 
@@ -152,11 +152,13 @@ Digite uma entrada qualquer para continuar.
 
 - Após o comando make ser executado, o programa pode ser iniciado com o comando `user@pc:~/SGBDR$ ./bin/main`.
 
-### Observaçóes
+### Observações
 
 - Para que as alterações realizadas no sistema sejam salvas em disco, é necessário finalizar a operação utilizando a função [8].
 - Não é possível, por exemplo, criar uma Tabela e excluí-la logo em seguida, pois o arquivo em disco ainda não foi gerado.
 - O arquivo Makefile conta com o comando `user@pc:~/SGBDR$ make clean`, porém deve-se avisar que o mesmo limpa também a pasta de arquivos gerados pelo próprio programa, excluindo as tabelas e referências. Use apenas quando os arquivos não forem mais necessários.
+
+## Código
 
 Syntax highlighted code block
 
