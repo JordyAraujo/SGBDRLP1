@@ -23,9 +23,11 @@ Qual operação deseja realizar?
 
 Ao selecionar a opção [1], o usuário será requisitado de algumas informações para criação de uma nova tabela, como consta abaixo.
 
-```markdown
-Insira o nome da Tabela a ser criada: teste
-Insira o numero de colunas que deseja ter na Tabela: 3
+```
+Insira o nome da Tabela a ser criada:
+teste1									<-- Entrada do usuário
+Insira o numero de colunas que deseja ter na Tabela:
+3									<-- Entrada do usuário
 Insira o nome da coluna 1: int_col
 Qual o tipo da coluna?
 [0] char
@@ -33,10 +35,10 @@ Qual o tipo da coluna?
 [2] float
 [3] double
 [4] string
-1
+1			<-- Entrada do usuário
 Deseja fazer dessa a sua chave primária?
 [0] Sim[1] Não
-0
+0									<-- Entrada do usuário
 Insira o nome da coluna 2: float_col
 Qual o tipo da coluna?
 [0] char
@@ -44,15 +46,15 @@ Qual o tipo da coluna?
 [2] float
 [3] double
 [4] string
-2
-Insira o nome da coluna 3: char_col
+2									<-- Entrada do usuário
+Insira o nome da coluna 3: char_col	<-- Entrada do usuário
 Qual o tipo da coluna?
 [0] char
 [1] int
 [2] float
 [3] double
 [4] string
-0
+0									<-- Entrada do usuário
 Tabela 1 Criada!
 Digite uma entrada qualquer para continuar.
 ```
@@ -61,7 +63,7 @@ Digite uma entrada qualquer para continuar.
 
 Ao selecionar a segunda opção, o usuário poderá visualizar todas as Tabelas existentes no sistema:
 
-```markdown
+```
 Lista de tabelas existentes:
 -- teste1
 -- teste2
@@ -83,7 +85,7 @@ Qual tabela deseja visualizar?
 
 ### Adicionar Nova Linha em uma Tabela
 
-A função 4 irá iniciar o procedimento para adicionar uma nova linha, perguntando o valor que deve ser atribuído para cada célula.
+A função [4] irá iniciar o procedimento para adicionar uma nova linha, perguntando o valor que deve ser atribuído para cada célula.
 
 ```
 Lista de tabelas existentes:
@@ -126,7 +128,7 @@ Escolha uma tabela para ser excluída:
 [0] - teste1
 [1] - teste2
 [2] - teste3
-0
+0									<-- Entrada do usuário
 tabelas/1.csv <- Arquivo removido com sucesso.
 tabelas/1.ref <- Arquivo removido com sucesso.
 Digite uma entrada qualquer para continuar.
@@ -135,6 +137,14 @@ Digite uma entrada qualquer para continuar.
 ### Finalizar Operação
 
 Encerra os procedimentos e salva em disco todas as alterações realizadas.
+
+## O Código
+
+### Estrutura de Pastas, Compilação e Execução
+
+
+
+![](img/estrutura.png)
 
 Syntax highlighted code block
 
