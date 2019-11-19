@@ -18,9 +18,10 @@ Qual operação deseja realizar?
 [7] Excluir uma Tabela
 [8] Finalizar Operação
 ```
+
 ### Criar Tabela
 
-Ao selecionar a opção [1], o usuário será requisitado de algumas informações, como consta abaixo.
+Ao selecionar a opção [1], o usuário será requisitado de algumas informações para criação de uma nova tabela, como consta abaixo.
 
 ```markdown
 Insira o nome da Tabela a ser criada: teste
@@ -55,10 +56,85 @@ Qual o tipo da coluna?
 Tabela 1 Criada!
 Digite uma entrada qualquer para continuar.
 ```
+
+### Listar Tabelas Existentes
+
+Ao selecionar a segunda opção, o usuário poderá visualizar todas as Tabelas existentes no sistema:
+
 ```markdown
-.
+Lista de tabelas existentes:
+-- teste1
+-- teste2
+-- teste3
+Digite uma entrada qualquer para continuar.
 ```
 
+### Visualizar Tabela
+
+Esta função permite visualizar todos os dados de uma Tabela existente.
+
+```
+Lista de tabelas existentes:
+-- teste1
+-- teste2
+-- teste3
+Qual tabela deseja visualizar?
+```
+
+### Adicionar Nova Linha em uma Tabela
+
+A função 4 irá iniciar o procedimento para adicionar uma nova linha, perguntando o valor que deve ser atribuído para cada célula.
+
+```
+Lista de tabelas existentes:
+-- teste1
+-- teste2
+-- teste3
+Em qual tabela deseja adicionar uma nova linha?
+```
+
+### Realizar Pesquisa numa Tabela
+
+Permite encontrar valores específicos numa Tabela.
+
+```
+Lista de tabelas existentes:
+-- teste1
+-- teste2
+-- teste3
+Em qual tabela deseja realizar a pesquisa?
+```
+
+### Excluir Elemento de uma Tabela
+
+Remove o conteúdo de uma célula específica.
+
+```
+Lista de tabelas existentes:
+-- teste1
+-- teste2
+-- teste3
+Em qual tabela deseja excluir um elemento?
+```
+
+### Excluir uma Tabela
+
+Deleta a tabela selecionada do disco e dos registros.
+
+```
+Escolha uma tabela para ser excluída:
+[0] - teste1
+[1] - teste2
+[2] - teste3
+0
+tabelas/1.csv <- Arquivo removido com sucesso.
+tabelas/1.ref <- Arquivo removido com sucesso.
+Digite uma entrada qualquer para continuar.
+```
+
+### Finalizar Operação
+
+Encerra os procedimentos e salva em disco todas as alterações realizadas.
 
 Syntax highlighted code block
 
