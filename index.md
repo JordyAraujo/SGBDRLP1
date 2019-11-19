@@ -1,4 +1,4 @@
-## Sobre o Projeto
+## Visão Geral do Projeto
 
 - Nosso projeto é um _sistema de gerenciamento de banco de dados simplificado_ baseado no modelo relacional, escrito em **C++** e feito para compilar em sistemas **Linux**.
 
