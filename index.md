@@ -160,7 +160,7 @@ Digite uma entrada qualquer para continuar.
 
 ## Código
 
-### Tabela
+### Tabela.hpp
 ```cpp
 #ifndef __TABELA__H__
 #define __TABELA__H__
@@ -192,7 +192,7 @@ public:
 #endif
 ```
 
-### Sistema
+### Sistema.hpp
 ```cpp
 #ifndef __SISTEMA__H__
 #define __SISTEMA__H__
@@ -204,7 +204,7 @@ void Excluir_Tabela();
 #endif
 ```
 
-### Coluna
+### Coluna.hpp
 ```cpp
 #ifndef __COLUNA__H__
 #define __COLUNA__H__
