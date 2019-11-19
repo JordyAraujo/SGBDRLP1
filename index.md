@@ -1,6 +1,6 @@
 ## Sobre o Projeto
 
-Nosso projeto é um sistema de gerenciamento de banco de dados simplificado baseado no modelo relacional, escrito em C++.
+Nosso projeto é um _sistema de gerenciamento de banco de dados simplificado_ baseado no modelo relacional, escrito em **C++** e feito para compilar em sistemas **Linux**.
 
 ### Funcionalidades
 
@@ -146,11 +146,11 @@ A organização de pastas do projeto seguiu o padrão src include, que separa os
 
 ![](img/estrutura.png)
 
-Após o comando `~/SGBDR$ make`, as pastas auxiliares build e bin são criadas para conter os arquivos de build e os binários de execução, respectivamente:
+Após o comando `user@pc:~/SGBDR$ make`, as pastas auxiliares build e bin são criadas para conter os arquivos de build e os binários de execução, respectivamente:
 
 ![](img/estrutura2.png)
 
-Após o comando make ser executado, o programa pode ser iniciado com o comando `~/SGBDR$ ./bin/main`.
+Após o comando make ser executado, o programa pode ser iniciado com o comando `user@pc:~/SGBDR$ ./bin/main`.
 
 ### Observação
 
