@@ -142,9 +142,20 @@ Encerra os procedimentos e salva em disco todas as alterações realizadas.
 
 ### Estrutura de Pastas, Compilação e Execução
 
-
+A organização de pastas do projeto seguiu o padrão src include, que separa os arquivos de código-fonte e de cabeçalho.
 
 ![](img/estrutura.png)
+
+Após o comando `~/SGBDR$ make`, as pastas auxiliares build e bin são criadas para conter os arquivos de build e os binários de execução, respectivamente:
+
+![](img/estrutura2.png)
+
+Após o comando make ser executado, o programa pode ser iniciado com o comando `~/SGBDR$ ./bin/main`.
+
+### Observação
+
+Para que as alterações realizadas no sistema sejam salvas em disco, é necessário finalizar a operação utilizando a função [8].
+Não é possível, por exemplo, criar uma Tabela e excluí-la logo em seguida, pois o arquivo em disco ainda não foi gerado.
 
 Syntax highlighted code block
 
