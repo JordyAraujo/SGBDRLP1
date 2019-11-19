@@ -1,12 +1,12 @@
-## Welcome to GitHub Pages
+## Sobre o Projeto
 
-You can use the [editor on GitHub](https://github.com/JordyAraujo/SGBDRLP1/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Nosso projeto é um sistema de gerenciamento de banco de dados simplificado baseado no modelo relacional, escrito em C++.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Funcionalidades
 
-### Markdown
+Nosso sistema conta com as seguintes funcionalidades, baseadas no projeto modelo definido pelo professor:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![](img/funcionalidades.png)
 
 ```markdown
 Syntax highlighted code block
